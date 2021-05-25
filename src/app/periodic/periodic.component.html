@@ -1,10 +1,16 @@
 Hello Periodic Component
 
+<br/><br/>
+<a routerLink="/periodic">
+  Reload Blank
+</a>
+
+<br/>
 <a [routerLink]="['/periodic']" [queryParams]="{
   pageSize: 2,
   pageIndex: 0,
   sortColumn: 'name',
   orderBy: 'asc'
 }">
-  Reload
+  Reload With Params
 </a>
