@@ -15,7 +15,7 @@ export class PeriodicComponent implements OnInit, AfterViewInit, OnDestroy {
     this.route.queryParams.pipe(
       distinctUntilChanged(),
       tap(params => console.log('params', params))
-    );
+    ).subscribe();
   }
 
   ngAfterViewInit(): void {
